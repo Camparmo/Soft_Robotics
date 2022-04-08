@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!--Velocio Factory 1.0-->
+<!--www.VelocioNetworks.com-->
+<VelocioNetworks>
+  <elementPageTag sAddress="vFactoryPage" sIndex="" dtAddress="UI16" bWholeArray="False" />
+  <Page Name="Home">
+    <Label height="1" width="6" x="8" y="9" myLableType="Label" sRecipe="" align="left" myColor="black" sText="Speed of Motor" />
+    <Button height="1" width="3" x="16" y="10" myButtonType="Button" sRecipe="" sLabel="x-max">
+      <eButton sAddress="x-max" sIndex="" dtAddress="Bit" bWholeArray="False" />
+      <eValue sAddress="1" sIndex="" dtAddress="Bit" bWholeArray="False" />
+    </Button>
+    <Button height="1" width="3" x="22" y="10" myButtonType="Button" sRecipe="" sLabel="x-min">
+      <eButton sAddress="x-min" sIndex="" dtAddress="Bit" bWholeArray="False" />
+      <eValue sAddress="1" sIndex="" dtAddress="Bit" bWholeArray="False" />
+    </Button>
+    <Button height="1" width="3" x="16" y="12" myButtonType="Button" sRecipe="" sLabel="y-max">
+      <eButton sAddress="y-max" sIndex="" dtAddress="Bit" bWholeArray="False" />
+      <eValue sAddress="1" sIndex="" dtAddress="Bit" bWholeArray="False" />
+    </Button>
+    <Button height="1" width="3" x="22" y="12" myButtonType="Button" sRecipe="" sLabel="y-min">
+      <eButton sAddress="y-min" sIndex="" dtAddress="Bit" bWholeArray="False" />
+      <eValue sAddress="1" sIndex="" dtAddress="Bit" bWholeArray="False" />
+    </Button>
+    <Button height="1" width="3" x="16" y="14" myButtonType="Button" sRecipe="" sLabel="z-max">
+      <eButton sAddress="z-max" sIndex="" dtAddress="Bit" bWholeArray="False" />
+      <eValue sAddress="1" sIndex="" dtAddress="Bit" bWholeArray="False" />
+    </Button>
+    <Button height="1" width="3" x="22" y="14" myButtonType="Button" sRecipe="" sLabel="z-min">
+      <eButton sAddress="z-min" sIndex="" dtAddress="Bit" bWholeArray="False" />
+      <eValue sAddress="1" sIndex="" dtAddress="Bit" bWholeArray="False" />
+    </Button>
+    <UpDown height="1" width="4" x="8" y="10">
+      <eKey sAddress="x-motorspeed" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eInc sAddress="50" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eMin sAddress="50" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eMax sAddress="500" sIndex="" dtAddress="I32" bWholeArray="False" />
+    </UpDown>
+    <Label height="1" width="3" x="12" y="10" myLableType="Label" sRecipe="" align="left" myColor="black" sText="steps/s" />
+    <Label height="1" width="5" x="1" y="14" myLableType="Label" sRecipe="" align="left" myColor="black" sText="Soft Start/Stop" />
+    <UpDown height="1" width="3" x="1" y="15">
+      <eKey sAddress="motorstartstop" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eInc sAddress="10" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eMin sAddress="0" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eMax sAddress="200" sIndex="" dtAddress="I32" bWholeArray="False" />
+    </UpDown>
+    <Label height="1" width="2" x="4" y="15" myLableType="Label" sRecipe="" align="left" myColor="black" sText="ms" />
+    <Label height="1" width="3" x="12" y="12" myLableType="Label" sRecipe="" align="left" myColor="black" sText="steps/s" />
+    <Label height="1" width="3" x="12" y="14" myLableType="Label" sRecipe="" align="left" myColor="black" sText="steps/s" />
+    <UpDown height="1" width="4" x="8" y="12">
+      <eKey sAddress="y-motorspeed" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eInc sAddress="50" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eMin sAddress="50" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eMax sAddress="500" sIndex="" dtAddress="I32" bWholeArray="False" />
+    </UpDown>
+    <UpDown height="1" width="4" x="8" y="14">
+      <eKey sAddress="z-motorspeed" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eInc sAddress="100" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eMin sAddress="100" sIndex="" dtAddress="I32" bWholeArray="False" />
+      <eMax sAddress="1000" sIndex="" dtAddress="I32" bWholeArray="False" />
+    </UpDown>
+    <Label height="1" width="7" x="11" y="0" myLableType="Label" sRecipe="" align="left" myColor="black" sText="Stepper Motor Control" />
+    <Radio height="2" width="3" x="2" y="1">
+      <eRadio sAddress="Zero" sIndex="" dtAddress="Bit" bWholeArray="False" />
+      <value sAddress="1" sIndex="" dtAddress="Bit" bWholeArray="False" />
+      <label text="On" />
+      <value sAddress="0" sIndex="" dtAddress="Bit" bWholeArray="False" />
+      <label text="Off" />
+    </Radio>
+    <Label height="1" width="7" x="6" y="1" myLableType="Label" sRecipe="" align="left" myColor="black" sText="Set Home Location" />
+    <Button height="1" width="3" x="7" y="2" myButtonType="Button" sRecipe="" sLabel="Home">
+      <eButton sAddress="home" sIndex="" dtAddress="Bit" bWholeArray="False" />
+      <eValue sAddress="1" sIndex="" dtAddress="Bit" bWholeArray="False" />
+    </Button>
+    <Radio height="2" width="3" x="2" y="8">
+      <eRadio sAddress="motorprocess" sIndex="" dtAddress="Bit" bWholeArray="False" />
+      <value sAddress="1" sIndex="" dtAddress="Bit" bWholeArray="False" />
+      <label text="On" />
+      <value sAddress="0" sIndex="" dtAddress="Bit" bWholeArray="False" />
+      <label text="Off" />
+    </Radio>
+  </Page>
+</VelocioNetworks>
